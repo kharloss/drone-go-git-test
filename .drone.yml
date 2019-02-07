@@ -1,7 +1,5 @@
 pipeline:
   build:
-    image: golang
+    image: maven:3.5-alpine
     commands:
-      - echo "Hello World!"
-      - echo New Build
-      - echo Done
+      - mvn clean package
